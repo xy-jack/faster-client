@@ -4,17 +4,19 @@
       <div class="avue-breadcrumb"
            :class="[{ 'avue-breadcrumb--active': isCollapse }]"
            v-if="showCollapse">
-        <i class="icon-navicon"
-           @click="setCollapse"></i>
+        <i class="icon-navicon" @click="setCollapse"></i>
       </div>
     </div>
     <div class="top-bar__title">
-      <div class="top-bar__item top-bar__item--show"
-           v-if="showMenu">
+      <div class="top-bar__item top-bar__item--show" v-if="showMenu">
         <top-menu></top-menu>
       </div>
     </div>
     <div class="top-bar__right">
+     <!-- <el-tooltip class="item" effect="dark" content="换色" placement="bottom">
+        <theme/>
+      </el-tooltip>-->
+
       <el-tooltip v-if="showLock" effect="dark" content="锁屏" placement="bottom">
         <div class="top-bar__item">
           <!--el-icon-view-->

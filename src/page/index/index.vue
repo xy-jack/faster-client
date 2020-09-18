@@ -1,6 +1,5 @@
 <template>
-  <div class="avue-contail"
-       :class="{'avue--collapse':isCollapse}">
+  <div class="avue-contail" :class="{'avue--collapse':isCollapse}">
     <div class="avue-header">
       <!-- 顶部导航栏 -->
       <top/>
@@ -11,7 +10,7 @@
         <!-- 左侧导航栏 -->
         <sidebar/>
       </div>
-      <div class="avue-main">
+      <div class="avue-main" style="margin-top: 3px">
         <!-- 顶部标签卡 -->
         <tags/>
         <!-- 主体视图层 -->

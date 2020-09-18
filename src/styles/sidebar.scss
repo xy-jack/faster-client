@@ -1,7 +1,7 @@
 .avue-sidebar {
-    user-select: none; 
+    user-select: none;
     position: relative;
-    padding-top: 74px;
+    padding-top: 65px;
     height: 100%;
     position: relative;
     background-color: #20222a;
@@ -56,7 +56,7 @@
                 top: 0;
                 left: 0;
                 bottom: 0;
-                width: 4px;
+                /*width: 4px;*/
                 background: $mainBg;
                 position: absolute
             }
@@ -81,13 +81,13 @@
             color:rgba(255, 255, 255, 0.7);
         }
         &.is-active {
-            background-color: rgba(0, 0, 0, .8);
+            background-color: #1E90FF;
             span,
             i {
                 color: #fff
             }
             &:hover {
-                background-color: rgba(0, 0, 0, .8);
+                background-color: #1E90FF;
             }
         }
         &:hover {
