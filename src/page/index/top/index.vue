@@ -33,7 +33,8 @@
         </div>
       </el-tooltip>
 
-      <img class="avatar" :src="userInfo.avatar">
+      <!--<img class="avatar" :src="userInfo.avatar">-->
+      <img class="avatar" src="../../../../public/img/avatar.jpg">
       <el-dropdown>
         <span class="el-dropdown-link">
           {{userInfo.username}}

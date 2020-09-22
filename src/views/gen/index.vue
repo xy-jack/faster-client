@@ -1,35 +1,15 @@
-<!--
-  -    Copyright (c) 2018-2025, test All rights reserved.
-  -
-  - Redistribution and use in source and binary forms, with or without
-  - modification, are permitted provided that the following conditions are met:
-  -
-  - Redistributions of source code must retain the above copyright notice,
-  - this list of conditions and the following disclaimer.
-  - Redistributions in binary form must reproduce the above copyright
-  - notice, this list of conditions and the following disclaimer in the
-  - documentation and/or other materials provided with the distribution.
-  - Neither the name of the pig4cloud.com developer nor the names of its
-  - contributors may be used to endorse or promote products derived from
-  - this software without specific prior written permission.
-  - Author: test
-  -->
-
+<!--代码生成页面-->
 <template>
   <div class="execution">
     <basic-container>
       <el-row :gutter="20">
-        <el-col :span="4">
+        <!--<el-col :span="4">
           <div class="grid-content bg-purple">
             <el-select v-model="q.dsName" placeholder="请选择数据源" @change="search">
-              <el-option
-                v-for="item in dataSourceList"
-                :key="item.id"
-                :label="item.name"
-                :value="item.name"/>
+              <el-option v-for="item in dataSourceList" :key="item.id" :label="item.name" :value="item.name"/>
             </el-select>
           </div>
-        </el-col>
+        </el-col>-->
         <el-col :span="4">
           <div class="grid-content bg-purple">
             <el-input v-model="q.tableName" placeholder="表名称"/>
@@ -52,19 +32,9 @@
         @size-change="sizeChange"
         @current-change="currentChange"
         @refresh-change="refreshChange">
-        <template
-          slot-scope="scope"
-          slot="menu">
-          <el-button
-            type="text"
-            icon="el-icon-check"
-            @click="handleDown(scope.row,scope.index)">生成
-          </el-button>
-          <el-button
-            type="text"
-            icon="icon-sheji"
-            @click="handleDesign(scope.row,scope.index)">设计
-          </el-button>
+        <template slot-scope="scope" slot="menu">
+          <el-button type="text" icon="el-icon-check" @click="handleDown(scope.row,scope.index)">生成</el-button>
+          <!--<el-button type="text" icon="icon-sheji" @click="handleDesign(scope.row,scope.index)">设计</el-button>-->
         </template>
       </avue-crud>
 
@@ -126,7 +96,7 @@
       }
     },
     created() {
-      this.getdataSourceList()
+      //this.getdataSourceList()
     },
     methods: {
       getList(page) {
